@@ -204,6 +204,7 @@ public class UpdateDb extends AppCompatActivity implements DatePickerFragment.On
         ContentValues contentValues = new ContentValues();
         contentValues.put(RunEntry.COLUMN_DATE_OF_RUN, dateSet);
         contentValues.put(RunEntry.COLUMN_RUN_TYPE, mType);
+/*        contentValues.put(RunEntry.COLUMN_MAIN_RUN_DISTANCE, "distance");*/ // <-------- this line tests whether contract restrictions imposed on the column are working
         contentValues.put(RunEntry.COLUMN_MAIN_RUN_DISTANCE, mainDistance);
         contentValues.put(RunEntry.COLUMN_MAIN_RUN_DURATION, duration);
         contentValues.put(RunEntry.COLUMN_RUN_REPEATS_MADE, repeats);

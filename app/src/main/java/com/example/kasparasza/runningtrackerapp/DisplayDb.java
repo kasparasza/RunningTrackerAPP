@@ -37,8 +37,8 @@ public class DisplayDb extends AppCompatActivity {
         // Instantiate a helper class for the interaction with db
         mDbHelper = new RunDbHelper(this);
 
-        // initiate the method that displays contents of the db
-        displayDbContents();
+        // initiate the methods that displays contents of the db
+        displayDbContents(readDb());
     }
 
     ////////
@@ -56,9 +56,10 @@ public class DisplayDb extends AppCompatActivity {
     ////////
 
     /*
-    * Method that displays contents of the db
+    * Method that reads the db and returns contents of the query in a Cursor object
+    * @return Cursor
     * */
-    private void displayDbContents(){
+    private Cursor readDb (){
         // Create and/or open a database to read from it
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
@@ -76,7 +77,7 @@ public class DisplayDb extends AppCompatActivity {
 
         // Filter results WHERE "title" = 'My Title'
         // other parameters are set to null
-        Cursor cursor = db.query(
+        Cursor cursorWithContents = db.query(
                 RunEntry.TABLE_NAME,                     // The table to query
                 projection,                               // The columns to return
                 null,                                     // The columns for the WHERE clause
@@ -85,7 +86,18 @@ public class DisplayDb extends AppCompatActivity {
                 null,                                     // don't filter by row groups
                 null                                      // don't use any sort order
         );
+        // return contents of the query in a Cursor object
+       return cursorWithContents;
+    }
 
+
+    /*
+    * Method that displays contents of the Cursor object
+    * @param Cursor with contents of the query from the db
+    * */
+    private void displayDbContents(Cursor cursor) {
+        // First we create a few header rows which will display to the user short summary
+        // of the db contents and its columns
         try {
             // Create a header in the Text View that looks like this:
             //
