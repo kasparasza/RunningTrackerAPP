@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_view_width_1">180dp</dimen>
+    <dimen name="edit_text_width">100dp</dimen>
+    <dimen name="padding_1">8dp</dimen>
+    <dimen name="padding_2">16dp</dimen>
+    <dimen name="padding_3">48dp</dimen>
+
+</resources>

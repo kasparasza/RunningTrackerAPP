@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">RunningTrackerAPP</string>
+
+    <!-- Strings used in Layouts: -->
+    <string name="Enter_details_header_text">Enter the details of your exercise:</string>
+    <string name="Select_training_date">Select the date:</string>
+    <string name="Select_training_type">Select the training type:</string>
+    <string name="Main_distance_ran">Main distance ran</string>
+    <string name="Duration_of_main_run">Duration of main run</string>
+    <string name="Number_of_repeats">Number of repeats</string>
+    <string name="Distance_of_break">Distance of each break</string>
+    <string name="Button_text_confirm">Confirm input</string>
+    <string name="Button_text_enter_run">Add exercise</string>
+    <string name="Hours">minutes</string>
+    <string name="Kilometers">km</string>
+    <string name="Number">#</string>
+
+    <!-- Strings used in text boxes -->
+    <string name="Enter_date">date</string>
+    <string name="Enter_main_distance">main distance in kilometers</string>
+    <string name="Enter_duration">duration in minutes</string>
+    <string name="Enter_repeats">number of repeats</string>
+    <string name="Enter_breaks">distance of breaks</string>
+
+    <!-- Strings used in Spinner -->
+    <string name="type_1">recovery run</string>
+    <string name="type_2">fartlek</string>
+    <string name="type_3">VO2 max</string>
+    <string name="type_4">tempo run</string>
+    <string name="type_5">long run</string>
+
+    <!-- Strings used in Java code -->
+    <string name="Contents_of_the_db_p01">"Run exercise table contains "</string>
+    <string name="Contents_of_the_db_p02">" runs:\n\n"</string>
+    <string name="Toast_text_successful_adition_to_db">"Your exercise was saved with id : "</string>
+    <string name="Toast_text_failed_adition_to_db">Error with saving an exercise.</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These are the options displayed in the run type drop-down Spinner -->
+    <string-array name="array_run_type_options">
+        <item>@string/type_1</item>
+        <item>@string/type_2</item>
+        <item>@string/type_3</item>
+        <item>@string/type_4</item>
+        <item>@string/type_5</item>
+    </string-array>
+
+</resources>
